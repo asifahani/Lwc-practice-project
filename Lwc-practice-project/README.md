@@ -39,4 +39,5 @@ The `sfdx-project.json` file contains useful configuration information for your 
 Live Demo on the Scratch Org: https://hosted-scratch.herokuapp.com/launch?template=https://github.com/eabhijith/lwc-demo-project
 
 # Preview
+![image](https://user-images.githubusercontent.com/110885737/210944815-5227dbed-392a-4a9b-8044-e40fd241d22b.png)
 
