@@ -16,3 +16,28 @@ The `sfdx-project.json` file contains useful configuration information for your 
 - [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
 - [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+
+# LWC Demo App
+ Sample LWC playground components created in the dev session - Jan 5
+ 
+<a href="https://githubsfdeploy.herokuapp.com">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
+
+# Components 
+ - It contains an app 
+ - A lightning Page
+ - 3 lwc components 
+
+# Fetures 
+ - Searching users on GitHub
+ - A Game -- Optional
+
+ 
+# Live Demo
+Live Demo on the Scratch Org: https://hosted-scratch.herokuapp.com/launch?template=https://github.com/eabhijith/lwc-demo-project
+
+# Preview
+
+![image](https://user-images.githubusercontent.com/17565188/210774071-17fc91f2-a7d7-4bdd-9c05-a50fe2ca4f6a.png)
