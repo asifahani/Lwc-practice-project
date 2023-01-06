@@ -29,6 +29,7 @@ The `sfdx-project.json` file contains useful configuration information for your 
  - It contains an app 
  - A lightning Page
  - 3 lwc components 
+![image](https://user-images.githubusercontent.com/110885737/210944714-73646427-4cb5-44ab-87db-8bf26192623f.png)
 
 # Fetures 
  - Searching users on GitHub
