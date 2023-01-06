@@ -29,7 +29,6 @@ The `sfdx-project.json` file contains useful configuration information for your 
  - It contains an app 
  - A lightning Page
  - 3 lwc components 
-![image](https://user-images.githubusercontent.com/110885737/210944714-73646427-4cb5-44ab-87db-8bf26192623f.png)
 
 # Fetures 
  - Searching users on GitHub
@@ -40,4 +39,5 @@ The `sfdx-project.json` file contains useful configuration information for your 
 Live Demo on the Scratch Org: https://hosted-scratch.herokuapp.com/launch?template=https://github.com/eabhijith/lwc-demo-project
 
 # Preview
+![image](https://user-images.githubusercontent.com/110885737/210944815-5227dbed-392a-4a9b-8044-e40fd241d22b.png)
 
