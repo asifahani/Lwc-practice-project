@@ -32,5 +32,9 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
+     <types>
+        <members>Applycations</members>
+        <name>CustomApplication</name>
+    </types>
     <version>55.0</version>
 </Package>
