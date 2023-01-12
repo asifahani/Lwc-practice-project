@@ -33,8 +33,12 @@
         <name>StaticResource</name>
     </types>
      <types>
-        <members>Applycations</members>
+        <members>Lwc_Project</members>
         <name>CustomApplication</name>
+    </types>
+     <types>
+         <members>Github_Search_Result</members>
+        <name>FlexiPage</name>
     </types>
     <version>55.0</version>
 </Package>
