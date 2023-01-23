@@ -8,8 +8,8 @@ export default class GithubSearchBox extends LightningElement {
     messageContext;
 
     handleClick(event){
-let inputvalue=this.template.querySelectorAll("lightning-input")[0].value;
-const payload = { isTermvalid:true, searchTerm:inputvalue };
+    let inputvalue=this.template.querySelectorAll("lightning-input")[0].value;
+    const payload = { isTermvalid:true, searchTerm:inputvalue };
 
         publish(this.messageContext, searchMessage, payload);
     }
