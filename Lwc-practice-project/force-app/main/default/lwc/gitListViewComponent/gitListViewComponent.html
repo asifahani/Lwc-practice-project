@@ -2,10 +2,19 @@
   @description       : 
   @author            : ChangeMeIn@UserSettingsUnder.SFDoc
   @group             : 
-  @last modified on  : 01-18-2023
+  @last modified on  : 01-20-2023
   @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 -->
 <template>
-  <div class="tiledBackground">
-    This is where the list whould be rendered!! {personName}</div>
+  <lightning-card title="User List">
+    
+  <template if:true={retrivedusers}>
+  <template for:each={retrivedusers} for:item="retrivedusers">
+    <div key={retrivedusers.id}>
+<c-gitlistview-child retrived-user={retrivedusers}></c-gitlistview-child>
+    </div>
+  <!--  <li key={retrivedusers.id}>{retrivedusers.login}</li>
+    <img src={retrivedusers.avatar_url} alt={retrivedusers.login} width="100" height="100">-->
+  </template>
+  </template></lightning-card>
 </template>

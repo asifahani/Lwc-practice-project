@@ -6,11 +6,12 @@ import {
     MessageContext
 } from 'lightning/messageService';
 import searchMessage from '@salesforce/messageChannel/SampleMessageChannel__c';
-const QUERY_USER_ENDPOINT_URL='https://api.github.com/search/users/q=';
+const QUERY_USER_ENDPOINT_URL='https://api.github.com/search/users?q=';
 
 export default class GitListViewComponent extends LightningElement {
 
     @api personName;
+    retrivedusers=[];
     subscription = null;
 
     @wire(MessageContext)
@@ -38,13 +39,15 @@ export default class GitListViewComponent extends LightningElement {
 
     async handleMessage(message) {
        console.log('handleMessage:', message);
-       this.personName=message.message.searchTerm;
+       this.personName=message.searchTerm;
        let queryEndPoint=QUERY_USER_ENDPOINT_URL+this.personName;
        try{
-const USER_LIST=await fetch(queryEndPoint);
-console.log(USER_LIST);
-     } catch(error){
-console.log(error); 
+        const RESPONSE=await fetch(queryEndPoint);
+        const USER_LIST=await RESPONSE.json();
+        console.log(USER_LIST.items);
+        this.retrivedusers=USER_LIST.items;
+       }catch(error){
+          console.log(error); 
       }
     }
 
