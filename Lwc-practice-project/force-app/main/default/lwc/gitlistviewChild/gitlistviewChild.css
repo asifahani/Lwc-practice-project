@@ -1,6 +1,8 @@
 .lgc-bg {
 background:linear-gradient(111.55deg);
+background-color: rgb(220, 226, 205);
 border: 1px solid gold;
 border-radius: 1rem;
 box-shadow: rgb(red, green, blue) 0px 0.15rem 0.5rem;
+
 }
