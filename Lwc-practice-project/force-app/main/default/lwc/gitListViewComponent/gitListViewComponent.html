@@ -2,7 +2,7 @@
   @description       : 
   @author            : ChangeMeIn@UserSettingsUnder.SFDoc
   @group             : 
-  @last modified on  : 01-27-2023
+  @last modified on  : 01-30-2023
   @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 -->
 <template>
@@ -10,6 +10,9 @@
     <template if:true={showuser} >
     the selected user is <strong>{selecteduser}</strong></br>
     <lightning-button variant="brand" label="SaveUser" title="Primary action" onclick={handleSaveUserClick} class="slds-m-left_x-small"></lightning-button>
+  </template>
+  <template if:true={retriveduserName}>
+    the retrived user Name <strong>{retriveduserName}</strong>
   </template>
   <template if:true={retrivedusers}>
   <template for:each={retrivedusers} for:item="retrivedusers">

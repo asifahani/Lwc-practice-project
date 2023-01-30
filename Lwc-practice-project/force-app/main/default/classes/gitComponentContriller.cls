@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 01-27-2023
+ * @last modified on  : 01-30-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public with sharing class gitComponentContriller {
@@ -23,10 +23,10 @@ public with sharing class gitComponentContriller {
     }
    
     @AuraEnabled
-    public static Boolean insertContact1(List<string> contactNameList){
+    public static Boolean insertContact1(List<string> accNameList){
         List<Account> accList=new List<Account>();
-        if(!contactNameList.isEmpty()){
-            for(String contactName:contactNameList){
+        if(!accNameList.isEmpty()){
+            for(String contactName:accNameList){
             accList.add(new Account(Name =contactName));
         }
     }

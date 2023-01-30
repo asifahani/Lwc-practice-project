@@ -7,6 +7,9 @@ import {
 } from 'lightning/messageService';
 import searchMessage from '@salesforce/messageChannel/SampleMessageChannel__c';
 import insertContact from '@salesforce/apex/gitComponentContriller.insertContact';
+import insertContact1 from '@salesforce/apex/gitComponentContriller.insertContact1';
+import { getRecord } from 'lightning/uiRecordApi';
+import Account from '@salesforce/schema/Account.Name';
 const QUERY_USER_ENDPOINT_URL='https://api.github.com/search/users?q=';
 
 export default class GitListViewComponent extends LightningElement {
@@ -16,7 +19,17 @@ export default class GitListViewComponent extends LightningElement {
     selecteduserArray=[];
     retrivedusers=[];
     subscription = null;
+    retriveduserName='';
 
+    @wire(getRecord, { recordId: '0012w00001HqTIvAAN', fields: 'Account.Name' })
+    wiredRecord({ error, data }) {
+    if(error){
+console.log(error) ;
+    }else if(data){
+        console.log(data);
+        this.retriveduserName=data.fields.Name.value;
+    }
+    }
     @wire(MessageContext)
     messageContext;
 
@@ -81,8 +94,10 @@ export default class GitListViewComponent extends LightningElement {
 //     }
 
     async handleSaveUserClick(){
-        try{
-        const issuccess=await insertContact1({contactNameList:this.selecteduserArray});
+        console.log('save user in SF');
+
+                try{
+        const issuccess=await insertContact1({accNameList:this.selecteduserArray});
         console.log('created creation'+issuccess);
         }catch(error){
         console.log(error);
